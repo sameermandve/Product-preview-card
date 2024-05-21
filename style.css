@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  display: flex;
+  max-width: 500px;
+  margin: 100px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px hsl(228, 12%, 48%);
+}
+
+#desktop-image {
+  width: 250px;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#white-side {
+  width: 250px;
+  height: auto;
+  padding: 20px 25px 20px 20px;
+  font-size: 14px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#info-container {
+  margin-top: 5px;
+}
+
+#info-container h4 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+}
+
+#info-container h1 {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: start;
+  font-weight: 700;
+  margin: 12px 0;
+  color: hsl(212, 21%, 14%);
+}
+
+#info-container p {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: start;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+#price-container {
+  display: flex;
+  align-items: center;
+}
+
+#price-container h1 {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  text-align: start;
+  font-weight: 700;
+  margin: 20px 12px 20px 0;
+  color: hsl(158, 36%, 37%);
+}
+
+#price-container p {
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: line-through solid hsl(228, 12%, 48%);
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  appearance: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  width: 200px;
+  padding: 13px;
+  border-radius: 6px;
+}
+
+button:hover,
+button:active {
+  background-color: hsl(157, 45%, 24%);
+  cursor: pointer;
+}
+
+button img {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+button p {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Responsive CSS */
+
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+  #mobile-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #desktop-image {
+    display: none;
+  }
+
+  body {
+    padding: 25px 20px;
+    height: 100%;
+  }
+
+  #card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  #mobile-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  #white-side {
+    width: 100%;
+    padding: 20px 30px 25px 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #info-container h4 {
+    font-size: 14px;
+  }
+
+  #info-container h1 {
+    line-height: 28px;
+    margin: 14px 0;
+  }
+
+  #info-container p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #price-container h1 {
+    margin: 20px 22px 16px 0;
+  }
+
+  #price-container p {
+    font-size: 13px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
